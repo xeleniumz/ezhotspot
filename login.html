@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EasyNet Hotspot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="-1" />
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="Crafty is a stunning HTML5/CSS3 multi-purpose template, well-coded, commented code and easy to customize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main_responsive.css">
+	<link rel="stylesheet" href="pure/pure-min.css">
+	<style type="text/css">
+	body,td,th {
+	font-size: 100%;
+}
+    body {
+	background-image: url(img/Rose.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;
+}<br>
+
+h5 {
+	font-size: 0.83em;
+}
+h6 {
+	font-size: 0.67em;
+}
+    </style>
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/carouFredSel.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<!-- EASYNET EXTERNAL SCRIPT -->
+<script type="text/javascript" src="js/easynet.js"></script>
+<form name="sendin" id="sendinFrm" action="$(link-login-only)" method="post">
+	<input type="hidden" name="username" id="hsuser" />
+	<input type="hidden" name="password" id="hspass" />
+	<input type="hidden" name="dst" value="$(link-orig)" />
+	<input type="hidden" name="popup" value="true" />
+</form>	
+<!-- END FORM -->
+
+
+<section class="billboard">
+	<div  align="center"class="wrapper">
+		<div class="caption">
+			<img src="img/logo.png" alt=""/><br>
+			<form class="pure-form" name="login" id="loginFrm" action="$(link-login-only)" >
+				<input 
+					type="hidden" 
+					name="dst" 
+					value="$(link-orig)" 
+				/>
+				<input 
+					type="hidden" 
+					name="popup" 
+					value="true" 
+				/>
+				<fieldset>
+					<input 
+						name="username" 
+						id="ezuser"
+						type="text" 
+						value="$(username)" 
+						placeholder="Username"
+						required
+					/>
+					<br>
+					<input 
+						name ="password" 
+						id="ezpass"
+						type="password" 
+						placeholder="Password"
+						required
+					/>
+					<br />
+					<br />
+					<button 
+						type="submit" 
+						class="pure-button pure-button-primary"
+					>
+						Log in
+					</button>
+				</fieldset>
+				<font size="5" style="color:red;"><i>$(if error)$(error)$(endif)</i></font>
+				<br/>
+				<br>
+				<br>
+				<br/>
+				<table width="288" height="189" border="0">
+					<tbody align="center">
+					<tr>
+						<td width="270"><a href="img/Andriod.pdf" target="_blank"><font style="color:#1A00FF;">วิธีการล็อคอินในโทรศัพท์ (Andriod)</a><br>
+							<br>
+							<a href="img/PC.pdf" target="_blank"><font style="color:#1A00FF;">วิธีการล็อคอินในคอมพิวเตอร์</a>
+							<br>
+							<br>
+							<a href="img/Coupon.pdf" target="_blank"><font style="color:#1A00FF;">ความหมายของค่าบนคูปอง</a>
+							<br>
+							<br>
+							<a href="img/login.mp4" target="_blank"><font style="color:#1A00FF;">วีดีโอสาธิตวิธีการล็อคอิน (IOS)</a>
+							<br>
+							<br>
+							<a href="img/logout.mp4" target="_blank"><font style="color:#1A00FF;">วีดีโอสาธิตวิธีการล็อคเอ้าท์</a>
+							<br>
+							<br>
+							<a href="img/Reset.mp4" target="_blank"><font style="color:#1A00FF;">วีดีโอสาธิตวิธีการรีเซ็ตเครือข่าย (IOS)</a>
+						</td>
+					</tr>
+			</tbody>
+				</table>
+
+			</form>
+		</div>
+  	</div>     
+</section><!--  End Billboard  -->
+
+
+
+</body>
+</html>

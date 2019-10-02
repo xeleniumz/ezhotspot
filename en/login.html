@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>EasyNet Hotspot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="-1" />
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="Crafty is a stunning HTML5/CSS3 multi-purpose template, well-coded, commented code and easy to customize"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main_responsive.css">
+	<link rel="stylesheet" href="pure/pure-min.css">
+	<style type="text/css">
+	body,td,th {
+	font-size: 100%;
+}
+    body {
+	background-image: url(img/Rose.jpg);
+}
+h5 {
+	font-size: 0.83em;
+}
+h6 {
+	font-size: 0.67em;
+}
+    </style>
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/carouFredSel.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+$(if chap-id)
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>	
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+
+<section class="billboard">
+		<div  align="center"class="wrapper">
+				<div class="caption">
+                <img src="img/logo.png" alt=""/><br>
+					<table  align="center" width="200" border="0"><br>
+  <tbody>
+    <tr>
+<div align="center">
+<a href="$(link-login-only)?target=%2F&amp;dst=$(link-orig-esc)">ภาษาไทย</a>
+</div>
+      <td align="center"><font size="4" color="#FFFFFF">Wifi Login<br></td>
+    </tr>
+  </tbody>
+</table>
+
+
+                    					
+                  <form class="pure-form" name="login" action="$(link-login-only)" method="post"
+						$(if chap-id) onSubmit="return doLogin()" $(endif)>
+						<input type="hidden" name="dst" value="$(link-orig)" />
+						<input type="hidden" name="popup" value="true" />
+					<fieldset>
+						<input name="username" type="text" value="$(username)" placeholder="Username"><br>
+						<input name ="password" type="password" placeholder="Password"><br /><br />
+						<button type="submit" class="pure-button pure-button-primary">Log in</button>
+						</fieldset>
+						<font style="color:red;"><i>$(if error)$(error)$(endif)</i></font>
+						<br/><br/>
+                        <table width="250" border="0">
+  <tbody align="center">
+    <tr>
+      <td><a href="http://cloud.easynet.co.th/payment/login/site/971">Use Internet Click!!.</a><br>Call Center : 02-584-3255</td>
+    </tr>
+  </tbody>
+</table>
+
+					</form>
+				</div>
+  </div>
+           
+	</section><!--  End Billboard  -->
+<script type="text/javascript">
+<!--
+	document.login.username.focus();
+//-->
+</script>
+	
+
+	<!--<footer>
+	  <!--<img src="img/rr.jpg" alt="Crafty" width="300px">
+        <img src="img/tt.png" alt="Crafty">
+        <img src="img/mm.png" alt="Crafty">-->
+		<!--<a href="http://www.pkldgroup.com/">www.pkldgroup.com</a>
+	<!--</footer><!--  End Footer  -->
+
+</body>
+</html>
